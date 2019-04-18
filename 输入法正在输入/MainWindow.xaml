@@ -1,0 +1,15 @@
+﻿<Window x:Class="输入法正在输入.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:输入法正在输入"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="225" Width="400" WindowStartupLocation="CenterScreen">
+    <StackPanel>
+        <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="在下面输入中文测试"/>
+        <TextBox x:Name="textBox" TextWrapping="Wrap" TextChanged="TextBox_TextChanged"
+                 TextCompositionManager.PreviewTextInputStart="TextBox_PreviewTextInputStart"
+                 TextCompositionManager.PreviewTextInput="TextBox_PreviewTextInput"/>
+    </StackPanel>
+</Window>

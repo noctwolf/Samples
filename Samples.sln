@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "输入法正在输入", "输入法正在输入\输入法正在输入.csproj", "{880403DF-2E7B-4FAD-B593-5163943C9E70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{880403DF-2E7B-4FAD-B593-5163943C9E70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{880403DF-2E7B-4FAD-B593-5163943C9E70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{880403DF-2E7B-4FAD-B593-5163943C9E70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{880403DF-2E7B-4FAD-B593-5163943C9E70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CACE0D4C-B144-4F0A-8B5C-B5EB0D8A8CC8}
+	EndGlobalSection
+EndGlobal

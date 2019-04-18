@@ -1,0 +1,13 @@
+﻿<Window x:Class="切换输入法.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:切换输入法"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="225" Width="400" WindowStartupLocation="CenterScreen">
+    <StackPanel Margin="10">
+        <TextBox InputMethod.PreferredImeState="On" InputMethod.PreferredImeConversionMode="Native" Text="打开输入法"/>
+        <TextBox InputMethod.PreferredImeState="Off" Text="关闭输入法"/>
+    </StackPanel>
+</Window>

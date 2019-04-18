@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:输入法正在输入"
         mc:Ignorable="d"
         Title="MainWindow" Height="225" Width="400" WindowStartupLocation="CenterScreen">
-    <StackPanel>
+    <StackPanel Margin="10">
         <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="在下面输入中文测试"/>
         <TextBox x:Name="textBox" TextWrapping="Wrap" TextChanged="TextBox_TextChanged"
                  TextCompositionManager.PreviewTextInputStart="TextBox_PreviewTextInputStart"

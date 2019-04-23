@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "输入法正在输入", "�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "切换输入法", "切换输入法\切换输入法.csproj", "{CF2DFFE3-219B-43DC-BF3A-D1C240456B83}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "破解爬虫防护", "破解爬虫防护\破解爬虫防护.csproj", "{7197D1BD-D84B-4CEE-80FF-95150B03E838}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CF2DFFE3-219B-43DC-BF3A-D1C240456B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF2DFFE3-219B-43DC-BF3A-D1C240456B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF2DFFE3-219B-43DC-BF3A-D1C240456B83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7197D1BD-D84B-4CEE-80FF-95150B03E838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7197D1BD-D84B-4CEE-80FF-95150B03E838}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7197D1BD-D84B-4CEE-80FF-95150B03E838}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7197D1BD-D84B-4CEE-80FF-95150B03E838}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

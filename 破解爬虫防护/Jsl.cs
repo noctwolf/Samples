@@ -1,10 +1,9 @@
-﻿using Jint;
+﻿using OpenQA.Selenium.Chrome;
+using Raize.CodeSiteLogging;
 using System;
-using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Net;
 using System.Text;
-using Raize.CodeSiteLogging;
 
 namespace 破解爬虫防护
 {
@@ -12,23 +11,24 @@ namespace 破解爬虫防护
     {
         public static string GetCookies(HttpWebResponse httpWebResponse)
         {
-            string script1 = "";
-            string script2 = "";
+            var script1 = "";
+            var script2 = "";
+            var chromeDriver = new ChromeDriver();
             try
             {
                 using (var responseStream = httpWebResponse.GetResponseStream())
                 using (var streamReader = new StreamReader(responseStream ?? throw new InvalidOperationException(), Encoding.UTF8))
                     script1 = streamReader.ReadToEnd();
-                var engine = new Engine().SetValue("document", new Document());
-
+                chromeDriver.Navigate().GoToUrl(httpWebResponse.ResponseUri);
                 var run = script1.Substring("<script>", "</script>").Replace("{eval(", "{return (");
-                run = $"function script2(){{{run}}};";
-                script2 = engine.Execute(run).GetValue("script2").Invoke().ToString();
-
+                run = $"function script2(){{{run}}}; return script2();";
+                script2 = chromeDriver.ExecuteScript(run).ToString();
                 var del = script2.Substring("=function(){", "document.cookie=");
                 run = script2.Replace(del + "document.cookie=", "return ");
                 var name = script2.Substring("var ", "=");
-                return engine.Execute(run).GetValue(name).Invoke().ToString();
+                run = $"{run}; return {name}();";
+                var cookie = chromeDriver.ExecuteScript(run).ToString();
+                return cookie;
             }
             catch (Exception ex)
             {
@@ -37,14 +37,10 @@ namespace 破解爬虫防护
                 CodeSite.Send("script2", script2);
                 return "";
             }
-        }
-
-        [SuppressMessage("ReSharper", "InconsistentNaming")]
-        [SuppressMessage("ReSharper", "UnusedMember.Local")]
-        [SuppressMessage("ReSharper", "UnusedParameter.Local")]
-        private class Document
-        {
-            public void attachEvent(object o1, object o2) { }
+            finally
+            {
+                chromeDriver.Quit();
+            }
         }
     }
 }

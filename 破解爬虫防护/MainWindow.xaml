@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:破解爬虫防护"
         mc:Ignorable="d"
         Title="破解爬虫防护" Height="225" Width="400" WindowStartupLocation="CenterScreen">
-    <Grid>
-        <Button Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" Click="Button_Click"/>
-    </Grid>
+    <StackPanel Margin="10">
+        <Button Content="ScrapingBrowser" Click="Button_Click"/>
+    </StackPanel>
 </Window>

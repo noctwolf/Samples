@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "切换输入法", "切换�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "破解爬虫防护", "破解爬虫防护\破解爬虫防护.csproj", "{7197D1BD-D84B-4CEE-80FF-95150B03E838}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "数据验证", "数据验证\数据验证.csproj", "{A3D31972-0189-4923-9C1D-342D7A618FA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{7197D1BD-D84B-4CEE-80FF-95150B03E838}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7197D1BD-D84B-4CEE-80FF-95150B03E838}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7197D1BD-D84B-4CEE-80FF-95150B03E838}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3D31972-0189-4923-9C1D-342D7A618FA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3D31972-0189-4923-9C1D-342D7A618FA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3D31972-0189-4923-9C1D-342D7A618FA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3D31972-0189-4923-9C1D-342D7A618FA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "破解爬虫防护", "破�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "数据验证", "数据验证\数据验证.csproj", "{A3D31972-0189-4923-9C1D-342D7A618FA1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xaml编译错误", "xaml编译错误\xaml编译错误.csproj", "{8C5EF99D-76A9-4EFD-95C3-CAC9215B51BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{A3D31972-0189-4923-9C1D-342D7A618FA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3D31972-0189-4923-9C1D-342D7A618FA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3D31972-0189-4923-9C1D-342D7A618FA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C5EF99D-76A9-4EFD-95C3-CAC9215B51BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C5EF99D-76A9-4EFD-95C3-CAC9215B51BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C5EF99D-76A9-4EFD-95C3-CAC9215B51BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C5EF99D-76A9-4EFD-95C3-CAC9215B51BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

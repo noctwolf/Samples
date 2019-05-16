@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xaml编译错误", "xaml编
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "依赖属性更改事件", "依赖属性更改事件\依赖属性更改事件.csproj", "{5561EDC3-8366-4760-98DF-B9DDA469D133}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "同时使用多个实体框架", "同时使用多个实体框架\同时使用多个实体框架.csproj", "{BF4458E1-A257-4271-A12C-E1EE64642A9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{5561EDC3-8366-4760-98DF-B9DDA469D133}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5561EDC3-8366-4760-98DF-B9DDA469D133}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5561EDC3-8366-4760-98DF-B9DDA469D133}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF4458E1-A257-4271-A12C-E1EE64642A9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF4458E1-A257-4271-A12C-E1EE64642A9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF4458E1-A257-4271-A12C-E1EE64642A9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF4458E1-A257-4271-A12C-E1EE64642A9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

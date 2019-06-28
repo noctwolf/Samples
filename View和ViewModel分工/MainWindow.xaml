@@ -1,0 +1,14 @@
+﻿<Window x:Class="View和ViewModel分工.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:View和ViewModel分工"
+        xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+        DataContext="{dxmvvm:ViewModelSource Type=local:MainWindowViewModel}"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="225" Width="400" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button Command="{Binding ParseFileCommand}" Click="Button_Click" Content="选择一个文件解析" Width="75" Height="25"/>
+    </Grid>
+</Window>

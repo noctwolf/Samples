@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View和ViewModel分工", "V
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeView虚拟化跳转", "TreeView虚拟化跳转\TreeView虚拟化跳转.csproj", "{17A3F80F-05F4-46D0-91F3-551D60B722B1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComboBox多选分组", "ComboBox多选分组\ComboBox多选分组.csproj", "{5C0BCD02-DFC7-4769-AFEA-5904C8DDBECB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{17A3F80F-05F4-46D0-91F3-551D60B722B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17A3F80F-05F4-46D0-91F3-551D60B722B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17A3F80F-05F4-46D0-91F3-551D60B722B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C0BCD02-DFC7-4769-AFEA-5904C8DDBECB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C0BCD02-DFC7-4769-AFEA-5904C8DDBECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C0BCD02-DFC7-4769-AFEA-5904C8DDBECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C0BCD02-DFC7-4769-AFEA-5904C8DDBECB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "图标字体", "图标字�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View和ViewModel分工", "View和ViewModel分工\View和ViewModel分工.csproj", "{16BD91B1-B658-4D32-95E7-57898F15E531}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeView虚拟化跳转", "TreeView虚拟化跳转\TreeView虚拟化跳转.csproj", "{17A3F80F-05F4-46D0-91F3-551D60B722B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{16BD91B1-B658-4D32-95E7-57898F15E531}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16BD91B1-B658-4D32-95E7-57898F15E531}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16BD91B1-B658-4D32-95E7-57898F15E531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17A3F80F-05F4-46D0-91F3-551D60B722B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17A3F80F-05F4-46D0-91F3-551D60B722B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17A3F80F-05F4-46D0-91F3-551D60B722B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17A3F80F-05F4-46D0-91F3-551D60B722B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

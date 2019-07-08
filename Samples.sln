@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeView虚拟化跳转", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComboBox多选分组", "ComboBox多选分组\ComboBox多选分组.csproj", "{5C0BCD02-DFC7-4769-AFEA-5904C8DDBECB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComboBox过滤", "ComboBox过滤\ComboBox过滤.csproj", "{AB922B37-D7B6-4AA3-A8A2-8A9A43CBB78B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{5C0BCD02-DFC7-4769-AFEA-5904C8DDBECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C0BCD02-DFC7-4769-AFEA-5904C8DDBECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C0BCD02-DFC7-4769-AFEA-5904C8DDBECB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB922B37-D7B6-4AA3-A8A2-8A9A43CBB78B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB922B37-D7B6-4AA3-A8A2-8A9A43CBB78B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB922B37-D7B6-4AA3-A8A2-8A9A43CBB78B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB922B37-D7B6-4AA3-A8A2-8A9A43CBB78B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

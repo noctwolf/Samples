@@ -1,0 +1,13 @@
+﻿<Window x:Class="多UI线程.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:多UI线程"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="225" Width="400" WindowStartupLocation="CenterScreen">
+    <UniformGrid Rows="1">
+        <Button Content="普通方式" Click="普通方式_Click"/>
+        <Button Content="单独UI线程" Click="单独UI线程_Click"/>
+    </UniformGrid>
+</Window>

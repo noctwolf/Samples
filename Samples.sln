@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComboBox多选分组", "Com
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComboBox过滤", "ComboBox过滤\ComboBox过滤.csproj", "{AB922B37-D7B6-4AA3-A8A2-8A9A43CBB78B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "多UI线程", "多UI线程\多UI线程.csproj", "{24B8F3FD-4157-4054-A437-C59094E305BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{AB922B37-D7B6-4AA3-A8A2-8A9A43CBB78B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB922B37-D7B6-4AA3-A8A2-8A9A43CBB78B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB922B37-D7B6-4AA3-A8A2-8A9A43CBB78B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24B8F3FD-4157-4054-A437-C59094E305BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24B8F3FD-4157-4054-A437-C59094E305BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24B8F3FD-4157-4054-A437-C59094E305BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24B8F3FD-4157-4054-A437-C59094E305BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

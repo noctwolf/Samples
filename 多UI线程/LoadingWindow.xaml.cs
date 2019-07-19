@@ -9,13 +9,11 @@ namespace 多UI线程
     /// </summary>
     public partial class LoadingWindow : Window
     {
-        private Timer timer;
 
         public LoadingWindow()
         {
             InitializeComponent();
-            timer = new Timer(
-                _ => Dispatcher.InvokeAsync(() => textBlock.Text = DateTime.Now.ToString("HH:mm:ss.ffff")),
+            _ = new Timer(_ => Dispatcher.InvokeAsync(() => textBlock.Text = $"{DateTime.Now:HH:mm:ss.ffff}"),
                 null, 0, 10);
         }
     }

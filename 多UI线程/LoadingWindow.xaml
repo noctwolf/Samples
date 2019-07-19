@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:多UI线程"
         mc:Ignorable="d"
-        Title="LoadingWindow" Height="112" Width="200" WindowStartupLocation="CenterScreen">
+        Title="LoadingWindow" Height="120" Width="320" WindowStartupLocation="CenterScreen">
     <Grid>
-        <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="TextBlock" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock x:Name="textBlock" Text="TextBlock" HorizontalAlignment="Center" VerticalAlignment="Center"/>
     </Grid>
 </Window>

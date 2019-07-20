@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Threading;
 using System.Windows;
+using System.Windows.Threading;
 
 namespace 多UI线程
 {
@@ -9,12 +9,15 @@ namespace 多UI线程
     /// </summary>
     public partial class LoadingWindow : Window
     {
-
         public LoadingWindow()
         {
             InitializeComponent();
-            _ = new Timer(_ => Dispatcher.InvokeAsync(() => textBlock.Text = $"{DateTime.Now:HH:mm:ss.ffff}"),
-                null, 0, 10);
+            var timer = new DispatcherTimer
+            {
+                Interval = TimeSpan.FromMilliseconds(10),
+                IsEnabled = true
+            };
+            timer.Tick += (s, e) => textBlock.Text = $"{DateTime.Now:HH:mm:ss.ffff}";
         }
     }
 }

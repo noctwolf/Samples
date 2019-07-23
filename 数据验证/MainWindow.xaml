@@ -12,5 +12,6 @@
     <StackPanel Margin="10">
         <TextBox Text="{Binding UserName, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}"/>
         <dxe:TextEdit Text="{Binding UserName, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}"/>
+        <Button Content="提交" Command="{Binding SubmitCommand}" HorizontalAlignment="Center"/>
     </StackPanel>
 </Window>

@@ -11,6 +11,9 @@ namespace 数据验证
         [Required(ErrorMessage = "请输入用户名")]
         public virtual string UserName { get; set; }
 
+        [Range(1,100)]
+        public virtual int Age { get; set; }
+
         public void Submit() { }
 
         public bool CanSubmit() => !HasErrors;

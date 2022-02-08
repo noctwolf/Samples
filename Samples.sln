@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComboBox过滤", "ComboBox�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "多UI线程", "多UI线程\多UI线程.csproj", "{24B8F3FD-4157-4054-A437-C59094E305BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "语音合成及语音识别", "语音合成及语音识别\语音合成及语音识别.csproj", "{CE0CBD6F-E582-4BFE-B6CC-EB2A2F606AF6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{24B8F3FD-4157-4054-A437-C59094E305BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24B8F3FD-4157-4054-A437-C59094E305BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24B8F3FD-4157-4054-A437-C59094E305BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE0CBD6F-E582-4BFE-B6CC-EB2A2F606AF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE0CBD6F-E582-4BFE-B6CC-EB2A2F606AF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE0CBD6F-E582-4BFE-B6CC-EB2A2F606AF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE0CBD6F-E582-4BFE-B6CC-EB2A2F606AF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

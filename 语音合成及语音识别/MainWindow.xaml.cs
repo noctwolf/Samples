@@ -31,9 +31,18 @@ namespace 语音合成及语音识别
             Grammar grammar = new Grammar(new GrammarBuilder("线程")) { Name = "命令" };//没有这个，通常识别为“县城”
             recognizer.LoadGrammar(grammar);
 
-            var gb = new GrammarBuilder("设置背景");
+            GrammarBuilder gb = new GrammarBuilder("设置背景");
             gb.Append(new SemanticResultKey("Color", new Choices(new string[] { "红色", "绿色", "蓝色" })));
             grammar = new Grammar(gb) { Name = "设置背景颜色" };
+            recognizer.LoadGrammar(grammar);
+
+            gb = new GrammarBuilder();
+            Choices choices = new Choices(Enumerable.Range(1, 9).Select(n => n.ToString()).ToArray());
+            gb.Append(new SemanticResultKey("num1", choices));
+            gb.Append("加");
+            gb.Append(new SemanticResultKey("num2", choices));
+            gb.Append("等于");
+            grammar = new Grammar(gb) { Name = "加法运算" };
             recognizer.LoadGrammar(grammar);
 
             grammar = new Grammar(new GrammarBuilder("停止识别")) { Name = "Cancel" };
@@ -66,6 +75,11 @@ namespace 语音合成及语音识别
                                 Background = Brushes.Blue;
                                 break;
                         }
+                        break;
+                    case "加法运算":
+                        var i1 = int.Parse(e1.Result.Semantics["num1"].Value.ToString());
+                        var i2 = int.Parse(e1.Result.Semantics["num2"].Value.ToString());
+                        s = $"识别到命令，{s}{i1 + i2}";
                         break;
                 }
                 listBox.Items.Insert(0, s);

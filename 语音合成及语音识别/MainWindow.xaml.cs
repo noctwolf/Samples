@@ -32,7 +32,12 @@ namespace 语音合成及语音识别
             recognizer.LoadGrammar(grammar);
 
             GrammarBuilder gb = new GrammarBuilder("设置背景");
-            gb.Append(new SemanticResultKey("Color", new Choices(new string[] { "红色", "绿色", "蓝色" })));
+
+            gb.Append(new SemanticResultKey("Color", new Choices(
+                new SemanticResultValue("红色", Brushes.Red.Color.ToString()),
+                new SemanticResultValue("绿色", Brushes.Green.Color.ToString()),
+                new SemanticResultValue("蓝色", Brushes.Blue.Color.ToString())
+                )));
             grammar = new Grammar(gb) { Name = "设置背景颜色" };
             recognizer.LoadGrammar(grammar);
 
@@ -63,18 +68,7 @@ namespace 语音合成及语音识别
                         break;
                     case "设置背景颜色":
                         s = $"识别到命令，{s}";
-                        switch (e1.Result.Semantics["Color"].Value)
-                        {
-                            case "红色":
-                                Background = Brushes.Red;
-                                break;
-                            case "绿色":
-                                Background = Brushes.Green;
-                                break;
-                            case "蓝色":
-                                Background = Brushes.Blue;
-                                break;
-                        }
+                        Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString(e1.Result.Semantics["Color"].Value.ToString()));
                         break;
                     case "加法运算":
                         var i1 = int.Parse(e1.Result.Semantics["num1"].Value.ToString());

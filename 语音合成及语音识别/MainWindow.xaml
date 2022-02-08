@@ -6,13 +6,14 @@
         xmlns:local="clr-namespace:语音合成及语音识别"
         mc:Ignorable="d"
         Title="MainWindow" Height="225" Width="400" WindowStartupLocation="CenterScreen">
-    <Grid>
-        <StackPanel Orientation="Vertical">
-            <Button Content="语音合成" Click="Button_Click"/>
-            <Button Content="语音识别" Click="Button_Click_1"/>
-            <ListBox x:Name="listBox"/>
-
-        </StackPanel>
-
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Button Content="语音合成" Click="Button_Click"/>
+        <Button Content="语音识别" Click="Button_Click_1" Grid.Row="1"/>
+        <ListBox x:Name="listBox" Grid.Row="2"/>
     </Grid>
 </Window>

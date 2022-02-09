@@ -28,11 +28,11 @@ namespace 语音合成及语音识别
         {
             recognizer = new SpeechRecognitionEngine(new CultureInfo("zh-CN"));
 
+            #region 非必须代码
             Grammar grammar = new Grammar(new GrammarBuilder("线程")) { Name = "命令" };//没有这个，通常识别为“县城”
             recognizer.LoadGrammar(grammar);
 
             GrammarBuilder gb = new GrammarBuilder("设置背景");
-
             gb.Append(new SemanticResultKey("Color", new Choices(
                 new SemanticResultValue("红色", Brushes.Red.Color.ToString()),
                 new SemanticResultValue("绿色", Brushes.Green.Color.ToString()),
@@ -40,6 +40,7 @@ namespace 语音合成及语音识别
                 )));
             grammar = new Grammar(gb) { Name = "设置背景颜色" };
             recognizer.LoadGrammar(grammar);
+            grammar.SpeechRecognized += (sender1, e1) => Console.WriteLine(e1.Result.Text);
 
             gb = new GrammarBuilder();
             Choices choices = new Choices(Enumerable.Range(1, 9).Select(n => n.ToString()).ToArray());
@@ -52,8 +53,6 @@ namespace 语音合成及语音识别
 
             grammar = new Grammar(new GrammarBuilder("停止识别")) { Name = "Cancel" };
             recognizer.LoadGrammar(grammar);
-
-            recognizer.LoadGrammar(new DictationGrammar());
 
             recognizer.SpeechRecognized += (sender1, e1) =>
             {
@@ -79,7 +78,9 @@ namespace 语音合成及语音识别
                 listBox.Items.Insert(0, s);
                 new SpeechSynthesizer().SpeakAsync(s);
             };
+            #endregion
 
+            recognizer.LoadGrammar(new DictationGrammar());
             recognizer.SetInputToDefaultAudioDevice();
             recognizer.RecognizeAsync(RecognizeMode.Multiple);
         }
